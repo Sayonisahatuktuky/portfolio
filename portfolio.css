@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #766695;
+    background: #f9f8f8;
+    line-height: 1.6;/* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #721b72;
+        background-color: #f4f4f4;
+    }
+    
+    header {
+        text-align: center;
+        background-color: #440d4b;
+        color: white;
+        padding: 20px 0;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    header h3 {
+        font-size: 1.2rem;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.1rem;
+    }
+    
+    nav a:hover {
+        color: #427fa8;
+    }
+    
+    /* About Section */
+    .about-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px 0;
+        gap: 20px;
+    }
+    
+    .about-text {
+        flex: 1;
+    }
+    
+    .about-image img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    
+    /* Skills Section */
+    .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .skill-box {
+        flex: 1 1 calc(50% - 20px);
+        background: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Contact Section */
+    .social-media {
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    .social-media a {
+        color: #333;
+        margin: 0 10px;
+        font-size: 1.5rem;
+    }
+    
+    .social-media a:hover {
+        color: #007bff;
+    }
+    
+    /* Media Query */
+    @media (max-width: 768px) {
+        .about-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .about-image img {
+            margin-top: 15px;
+        }
+    
+        .skills-container {
+            flex-direction: column;
+        }
+    }
+    
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    background: #672b61;
+    color: rgb(221, 208, 208);
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #94bae3;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(127, 126, 126, 0.1);
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.skill-box {
+    flex: 2 1 calc(45% - 20px);
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skill-box:hover {
+    background: #4b8da2;
+    color: white;
+}
+
+.projects-container {
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.project-box {
+    flex: 2 1 calc(45% - 20px);
+    text-align: center;
+}
+
+.project-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.education-box {
+    text-align: center;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: rgba(255, 255, 255, 0.914);
+    margin-top: 20px;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .skills-container, .projects-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .skill-box, .project-box {
+        flex: 1 1 100%;
+    }
+}
